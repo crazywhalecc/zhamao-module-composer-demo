@@ -1,0 +1,19 @@
+{
+    "name": "zhamao/framework-starter",
+    "description": "composer project of zhamao-framework-starter",
+    "minimum-stability": "stable",
+    "license": "Apache-2.0",
+    "version": "2.4",
+    "type": "project",
+    "prefer-stable": true,
+    "require": {
+        "zhamao/framework": "^2.4"
+    },
+    "require-dev": {
+        "swoole/ide-helper": "@dev"
+    },
+    "scripts": {
+        "post-create-project-cmd": "vendor/bin/start init",
+        "post-update-cmd": "vendor/bin/start check:config"
+    }
+}
